@@ -1,5 +1,7 @@
+import './App.css';
+
 const App = () => {
-  return <div> hello world </div>
+  return <div className='font-bold'> hello world </div>
 }
 
-export default App
+export default App;
