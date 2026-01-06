@@ -7,7 +7,7 @@ const Sidebar = () => {
 
     return (
         <>
-            <div className={`absolute fixed h-screen w-40 flex flex-col gap-5 pl-6 bg-darkgray-100 text-lg font-medium z-1 transition-transform duration-400 ${isExpanded ? "translate-x-0" : "-translate-x-full"}`}>
+            <div className={`absolute fixed h-screen w-1/3 min-w-40 flex flex-col gap-5 pl-6 bg-darkgray-100 text-lg font-medium z-1 transition-transform duration-400 ${isExpanded ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="w-full flex justify-end pt-3 pr-3">
                     <button
                         className="text-2xl hover:text-neutral-300 active:text-neutral-400 transition-colors duration-150"
