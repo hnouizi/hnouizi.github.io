@@ -7,25 +7,21 @@ const App = () => {
 	const isSmallScreen = useMediaQuery({query: '(max-width: 600px)'});
 
 	return (
-		<div className="bg-radial from-neutral-100/3 to-neutral-100/0">
+		<div className="relative w-screen h-screen">
 			{!isSmallScreen 
 				? (
-					<div className="w-full flex justify-center mt-5">
+					<div className="absolute w-full flex justify-center mt-5">
 						<Header/>
 					</div>
 				)
 				: (
-					<div className="ml-4 mt-4">
+					<div className="absolute ml-4 mt-4">
 						<button>
 							<IoMenu className="text-4xl"/>
 						</button>
 					</div>
 				)
 			}
-
-			{/* Home Page */}
-			<div className="w-screen h-screen">
-			</div>
 		</div>
 	)
 }
