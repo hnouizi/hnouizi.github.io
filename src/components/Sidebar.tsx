@@ -17,7 +17,7 @@ const Sidebar = () => {
                     </button>
                 </div>
                 {tabs.map((tab) => (
-                    <div>
+                    <div key={tab}>
                         <button className="transform-all duration-200 border-b-2 border-darkgray-100 hover:border-lightorange">
                             {tab}
                         </button>
