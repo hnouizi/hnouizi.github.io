@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --color-darkgray-100: #121212;
+    --color-darkgray-97: #191919;
+    --color-darkgray-80: #414141;
+}
+
+body {
+    @apply bg-darkgray-100 text-neutral-100;
+    font-family: Roboto, Arial;
+}
+
+button {
+    @apply cursor-pointer
+}
