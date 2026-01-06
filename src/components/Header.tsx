@@ -17,7 +17,7 @@ const Header = () => {
                         </button>
                     ))}
                 </div>
-                <div> | </div>
+                <div className="text-darkgray-80"> | </div>
                 {/* gh & in buttons */}
                 <div className="flex gap-3 pl-4">
                     <button className="flex items-center">

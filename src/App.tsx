@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import { useMediaQuery } from "react-responsive";
 
 const App = () => {
-	const isSmallScreen = useMediaQuery({query: '(max-width: 600px)'});
+	const isSmallScreen = useMediaQuery({query: '(max-width: 700px)'});
 
 	return (
 		<div className="relative bg-radial from-darkgray-97 to-darkgray-100">
@@ -14,7 +14,7 @@ const App = () => {
 				: <Sidebar/>
 			}
 
-			<Home/>
+			<Home isSmallScreen={isSmallScreen}/>
 		</div>
 	)
 }
