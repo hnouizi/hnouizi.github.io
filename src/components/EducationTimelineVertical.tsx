@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import { IoSchool } from "react-icons/io5";
 
 const EducationTimelineVertical = () => {
-    const isSuperSmallScreen = useMediaQuery({query: '(max-width: 420px)'});
+    const isSuperSmallScreen = useMediaQuery({query: '(max-width: 430px)'});
 
     return (
         <div className="w-full flex justify-center">
