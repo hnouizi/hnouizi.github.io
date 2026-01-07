@@ -2,8 +2,10 @@
 
 @theme {
     --color-darkgray-100: #121212;
-    --color-darkgray-97: #191919;
+    --color-darkgray-95: #1E1E1E;
     --color-darkgray-80: #414141;
+    --color-darkgray-50: #888888;
+    --color-darkgray-35: #ACACAC;
     --color-lightorange: #F18F4E;
     --color-cobaltblue: #6677A2;
 }
@@ -15,4 +17,12 @@ body {
 
 button {
     @apply cursor-pointer
+}
+
+.triangle-down {
+    @apply w-0 h-0 border-x-20 border-x-transparent border-t-20
+}
+
+.left-triangle {
+    @apply w-0 h-0 border-y-20 border-y-transparent border-r-20
 }

@@ -4,8 +4,8 @@ const Header = () => {
     const tabs = ["Home", "Education", "Experience", "Projects"];
 
     return (
-        <div className="absolute w-full flex justify-center mt-5">
-            <div className="flex items-center fixed pl-2 pr-4 py-2 rounded-full bg-darkgray-97/95 backdrop-blur-md border-1 border-darkgray-80 font-semibold text-lg">
+        <div className="absolute w-full flex justify-center mt-5 z-99">
+            <div className="flex items-center fixed pl-2 pr-4 py-2 rounded-full bg-darkgray-95/85 backdrop-blur-sm border-1 border-darkgray-80 font-semibold text-lg">
                 {/* nav buttons */}
                 <div className="flex gap-1 pr-2">
                     {tabs.map((tab) => (
