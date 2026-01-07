@@ -1,14 +1,15 @@
 import { useMediaQuery } from "react-responsive";
-import HorizontalEducationTimeline from "./HorizontalEducationTimeline";
+import EducationTimelineHorizontal from "./EducationTimelineHorizontal";
+import EducationTimelineVertical from "./EducationTimelineVertical";
 
 const Education = () => {
     const showVerticalTimeline = useMediaQuery({query: '(max-width: 820px)'});
     
     return (
-        <div className="w-full flex justify-center items-center mt-10 mb-15">
+        <div className="w-full flex justify-center items-center">
             {showVerticalTimeline
-                ? <div> wip </div>
-                : <HorizontalEducationTimeline/>
+                ? <EducationTimelineVertical/>
+                : <EducationTimelineHorizontal/>
             }
         </div>
     )

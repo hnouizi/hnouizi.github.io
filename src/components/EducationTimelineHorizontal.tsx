@@ -2,7 +2,7 @@ import { IoSchool } from "react-icons/io5";
 import EducationSection from "./EducationSection";
 import Heading from "./Heading";
 
-const HorizontalEducationTimeline = () => {
+const EducationTimelineHorizontal = () => {
     return (
         <div className="min-w-200">
             <Heading>
@@ -37,4 +37,4 @@ const HorizontalEducationTimeline = () => {
     )
 }
 
-export default HorizontalEducationTimeline;
+export default EducationTimelineHorizontal;
