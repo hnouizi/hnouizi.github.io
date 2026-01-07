@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
+import Education from "./components/Education";
 import { useMediaQuery } from "react-responsive";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
 			}
 
 			<Home isSmallScreen={isSmallScreen}/>
+			<Education/>
 		</div>
 	)
 }
