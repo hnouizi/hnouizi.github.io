@@ -19,6 +19,10 @@ button {
     @apply cursor-pointer
 }
 
-.downward-triangle {
-    @apply w-0 h-0 border-l-20 border-l-transparent border-r-20 border-r-transparent border-t-20
+.triangle-down {
+    @apply w-0 h-0 border-x-20 border-x-transparent border-x-20 border-t-20
+}
+
+.left-triangle {
+    @apply w-0 h-0 border-y-20 border-y-transparent border-r-20
 }

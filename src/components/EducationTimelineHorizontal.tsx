@@ -12,14 +12,16 @@ const EducationTimelineHorizontal = () => {
             {/* sections */}
             <div className="w-full flex gap-5 mt-10 mb-10">
                 <EducationSection
-                    degree="Computer Science, A.S."
-                    school="Irvine Valley College"
-                    gradDate="May 2023"
-                />
-                <EducationSection
                     degree="Computer Science, B.S."
                     school="University of California, Irvine"
                     gradDate="December 2025"
+                    direction="down"
+                />
+                <EducationSection
+                    degree="Computer Science, A.S."
+                    school="Irvine Valley College"
+                    gradDate="May 2023"
+                    direction="down"
                 />
             </div>
 
