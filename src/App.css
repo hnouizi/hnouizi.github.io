@@ -20,7 +20,7 @@ button {
 }
 
 .triangle-down {
-    @apply w-0 h-0 border-x-20 border-x-transparent border-x-20 border-t-20
+    @apply w-0 h-0 border-x-20 border-x-transparent border-t-20
 }
 
 .left-triangle {
