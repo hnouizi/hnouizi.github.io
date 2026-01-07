@@ -1,18 +1,21 @@
-import { IoSchool } from "react-icons/io5";
 import Heading from "./Heading";
 import EducationSection from "./EducationSection";
+import { useMediaQuery } from "react-responsive";
+import { IoSchool } from "react-icons/io5";
 
 const EducationTimelineVertical = () => {
+    const isSuperSmallScreen = useMediaQuery({query: '(max-width: 420px)'});
+
     return (
         <div className="w-full flex justify-center">
              <div className="h-100 flex flex-col items-center">
-                <div className="w-full ml-15 sm:ml-0">
+                <div className={`w-full ${isSuperSmallScreen && "ml-10"}`}>
                     <Heading>
                         Education
                     </Heading>
                 </div>
 
-                <div className="h-full w-fit flex mt-10 ml-10 mr-5">
+                <div className="h-full w-fit flex mt-10 ml-10 mr-2">
                     {/* timeline & icons */}
                     <div className="flex-1 relative flex justify-center">
                         <div className="h-full border-5 rounded"/>
@@ -31,12 +34,14 @@ const EducationTimelineVertical = () => {
                             school="University of California, Irvine"
                             gradDate="December 2025"
                             direction="left"
+                            isSuperSmallScreen={isSuperSmallScreen}
                         />
                         <EducationSection
                             degree="Computer Science, A.S."
                             school="Irvine Valley College"
                             gradDate="May 2023"
                             direction="left"
+                            isSuperSmallScreen={isSuperSmallScreen}
                         />
                     </div>
                 </div>

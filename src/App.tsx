@@ -9,14 +9,14 @@ const App = () => {
 	const isSmallScreen = useMediaQuery({query: '(max-width: 700px)'});
 
 	return (
-		<div className="relative bg-radial from-darkgray-97 to-darkgray-100">
+		<div className="relative bg-radial from-darkgray-95 to-darkgray-100">
 			{!isSmallScreen 
 				? <Header/>
 				: <Sidebar/>
 			}
 
 			<Home isSmallScreen={isSmallScreen}/>
-			<Education/>
+			<Education isSmallScreen={isSmallScreen}/>
 		</div>
 	)
 }

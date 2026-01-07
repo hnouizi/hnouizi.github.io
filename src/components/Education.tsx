@@ -1,13 +1,15 @@
-import { useMediaQuery } from "react-responsive";
 import EducationTimelineHorizontal from "./EducationTimelineHorizontal";
 import EducationTimelineVertical from "./EducationTimelineVertical";
 
-const Education = () => {
-    const showVerticalTimeline = useMediaQuery({query: '(max-width: 820px)'});
+type EducationProps = {
+    isSmallScreen: boolean
+}
+
+const Education = ({ isSmallScreen }: EducationProps) => {
     
     return (
-        <div className="w-full flex justify-center items-center">
-            {showVerticalTimeline
+        <div className="w-full flex justify-center items-center mt-10">
+            {isSmallScreen
                 ? <EducationTimelineVertical/>
                 : <EducationTimelineHorizontal/>
             }

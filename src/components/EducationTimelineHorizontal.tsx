@@ -4,7 +4,7 @@ import Heading from "./Heading";
 
 const EducationTimelineHorizontal = () => {
     return (
-        <div className="min-w-200">
+        <div className="min-w-165">
             <Heading>
                 Education
             </Heading>
@@ -28,10 +28,10 @@ const EducationTimelineHorizontal = () => {
             {/* timeline & icons */}
             <div className="w-full relative flex items-center">
                 <div className="w-full border-5 rounded"/>
-                <div className="absolute left-42 bg-cobaltblue p-2 rounded-full border-5">
+                <div className="absolute left-33 bg-cobaltblue p-2 rounded-full border-5">
                     <IoSchool className="text-3xl"/>
                 </div>
-                <div className="absolute right-42 bg-cobaltblue p-2 rounded-full border-5">
+                <div className="absolute right-33 bg-cobaltblue p-2 rounded-full border-5">
                     <IoSchool className="text-3xl"/>
                 </div>
             </div>

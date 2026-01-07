@@ -5,9 +5,10 @@ type EducationSection = {
     school: string,
     gradDate: string
     direction: string
+    isSuperSmallScreen?: boolean
 }
 
-const EducationSection = ({ degree, school, gradDate, direction }: EducationSection) => {
+const EducationSection = ({ degree, school, gradDate, direction, isSuperSmallScreen }: EducationSection) => {
     return (
         <div className={`flex-1 ${direction === "left" && "flex justify-center items-center"}`}>
             {direction === "left" && (
@@ -16,14 +17,14 @@ const EducationSection = ({ degree, school, gradDate, direction }: EducationSect
                 </div>
             )}
             <div className="bg-white/5 px-8 py-5 rounded-lg">
-                <div className="text-lg sm:text-2xl font-semibold">
+                <div className={`${isSuperSmallScreen ? "text-lg" : "text-2xl"} font-semibold`}>
                     {degree}
                 </div>
-                <div className="text-sm sm:text-xl font-medium text-darkgray-35 italic mb-2">
+                <div className={`${isSuperSmallScreen ? "text-sm" : "text-lg"} font-medium text-darkgray-35 italic mb-2`}>
                     {school}
                 </div>
-                <div className="flex items-center text-darkgray-50 font-medium gap-2 text-sm sm:text-xl">
-                    <GiDiploma className="text-2xl"/>
+                <div className={`flex items-center text-darkgray-50 font-medium gap-2 ${isSuperSmallScreen ? "text-sm" : "text-base"}`}>
+                    <GiDiploma className={`${isSuperSmallScreen ? "text-xl" : "text-2xl"}`}/>
                     {gradDate}
                 </div>
             </div>
