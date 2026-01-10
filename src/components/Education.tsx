@@ -1,5 +1,4 @@
-import EducationTimelineHorizontal from "./EducationTimelineHorizontal";
-import EducationTimelineVertical from "./EducationTimelineVertical";
+import Timeline from "./Timeline/Timeline";
 
 type EducationProps = {
     isSmallScreen: boolean
@@ -9,10 +8,7 @@ const Education = ({ isSmallScreen }: EducationProps) => {
     
     return (
         <div className="w-full flex justify-center items-center mt-10">
-            {isSmallScreen
-                ? <EducationTimelineVertical/>
-                : <EducationTimelineHorizontal/>
-            }
+            <Timeline isVertical={isSmallScreen}/>
         </div>
     )
 }
