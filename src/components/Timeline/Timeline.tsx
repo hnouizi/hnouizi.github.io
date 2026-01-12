@@ -11,7 +11,7 @@ const Timeline = ({ isVertical, children }: TimelineProps) => {
     return (
         <div>
             {isVertical
-                ? <TimelineVertical/>
+                ? <TimelineVertical sections={children}/>
                 : <TimelineHorizontal sections={children}/>
             }
         </div>

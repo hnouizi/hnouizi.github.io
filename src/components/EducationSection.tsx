@@ -1,14 +1,16 @@
 import { GiDiploma } from "react-icons/gi";
+import { useMediaQuery } from "react-responsive";
 
 type EducationSection = {
     degree: string,
     school: string,
     gradDate: string
     direction: string
-    isSuperSmallScreen?: boolean
 }
 
-const EducationSection = ({ degree, school, gradDate, direction, isSuperSmallScreen }: EducationSection) => {
+const EducationSection = ({ degree, school, gradDate, direction }: EducationSection) => {
+    const isSuperSmallScreen = useMediaQuery({query: '(max-width: 430px)'});
+
     return (
         <div className={`flex-1 ${direction === "left" && "flex justify-center items-center"}`}>
             {direction === "left" && (

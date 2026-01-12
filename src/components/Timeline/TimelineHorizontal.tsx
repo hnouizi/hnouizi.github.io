@@ -14,7 +14,10 @@ const TimelineHorizontal = ({ sections }: TimelineHorizontal) => {
                         {section}
                     </div>
                     <div className="bg-cobaltblue p-2 rounded-full border-5 z-1">
-                        <IoSchool className="text-3xl"/>
+                        {Children.count(sections) <= 2
+                            ? <IoSchool className="text-3xl"/>
+                            : <div> hi </div>
+                        }
                     </div>
                 </div>
             ))}
