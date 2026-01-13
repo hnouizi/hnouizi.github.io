@@ -7,7 +7,7 @@ type TimelineVerticalProps = {
 
 const TimelineVertical = ({ sections }: TimelineVerticalProps) => {
     return (
-        <div className="h-fit mx-5 flex flex-col gap-5 relative">
+        <div className="h-fit flex flex-col gap-5 relative">
             {Children.map(sections, section => (
                 <div className="w-fit flex gap-5 items-center">
                     <div className="bg-cobaltblue p-2 rounded-full border-5 z-1">
