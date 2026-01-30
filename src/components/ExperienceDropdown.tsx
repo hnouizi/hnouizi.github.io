@@ -28,7 +28,7 @@ const ExperienceDropdown = ({ position, organization, duration }: ExperienceDrop
                     </div>
                 </div>
             </div>
-            <FaChevronDown className="text-darkgray-50 text-xl"/>
+            <FaChevronDown className="flex-none text-darkgray-50 text-xl"/>
         </div>
     )
 }
