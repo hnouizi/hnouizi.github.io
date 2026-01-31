@@ -12,7 +12,7 @@ const App = () => {
 	return (
 		<div className="relative flex flex-col items-center bg-radial from-darkgray-95 to-darkgray-100">
 			<Header/>
-			<div className="max-sm:mx-6 sm:w-156">
+			<div className="max-sm:w-full max-sm:px-6 sm:w-156">
 				<Home/>
 				<Experience/>
 			</div>

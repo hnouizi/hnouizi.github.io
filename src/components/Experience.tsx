@@ -15,6 +15,9 @@ const Experience = () => {
                 Ware Malcomb is a commercial real estate design firm that specializes
                 in many fields including architecture, interiors, and civil engineering.
                 "
+                details={[
+                    "..."
+                ]}
             />
         </div>
     )

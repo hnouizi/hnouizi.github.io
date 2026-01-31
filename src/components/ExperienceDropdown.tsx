@@ -4,11 +4,18 @@ import { FaBriefcase, FaChevronDown } from "react-icons/fa";
 type ExperienceDropdownProps = {
     position: string,
     organization: string,
-    duration: string
-    description: string
+    duration: string,
+    description: string,
+    details: string[]
 }
 
-const ExperienceDropdown = ({ position, organization, duration, description }: ExperienceDropdownProps) => {
+const ExperienceDropdown = ({
+    position,
+    organization,
+    duration,
+    description,
+    details
+}: ExperienceDropdownProps) => {
     const [ isExpanded, setIsExpanded ] = useState<boolean>(false);
 
     return (
@@ -39,8 +46,16 @@ const ExperienceDropdown = ({ position, organization, duration, description }: E
                 <FaChevronDown className={`flex-none text-darkgray-50 text-xl ${isExpanded && "rotate-180"}`}/>
             </div>
             {isExpanded && (
-                <div className="text-xs sm:text-sm font-medium mt-1 sm:ml-18 sm:mt-2 sm:mr-10">
+                <div className="text-xs sm:text-sm font-medium mt-2 mr-10 sm:ml-18">
+                    <hr className="text-darkgray-80 mb-2"/>
                     {description}
+                    <ul className="list-disc ml-6">
+                        {details.map((detail) => (
+                            <li key={detail}>
+                                {detail}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             )}
         </div>
