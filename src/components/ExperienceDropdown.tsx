@@ -5,7 +5,6 @@ type ExperienceDropdownProps = {
     position: string,
     organization: string,
     duration: string,
-    description: string,
     details: string[]
 }
 
@@ -13,7 +12,6 @@ const ExperienceDropdown = ({
     position,
     organization,
     duration,
-    description,
     details
 }: ExperienceDropdownProps) => {
     const [ isExpanded, setIsExpanded ] = useState<boolean>(false);
@@ -32,7 +30,7 @@ const ExperienceDropdown = ({
                         <div className="text-xl font-bold">
                             {position}
                         </div>
-                        <div className="flex text-xs sm:text-sm items-center gap-2 text-darkgray-50 font-bold">
+                        <div className="flex text-xs sm:text-sm items-center gap-2 text-darkgray-50 font-medium">
                             <div>
                                 {organization}
                             </div>
@@ -46,9 +44,8 @@ const ExperienceDropdown = ({
                 <FaChevronDown className={`flex-none text-darkgray-50 text-xl ${isExpanded && "rotate-180"}`}/>
             </div>
             {isExpanded && (
-                <div className="text-xs sm:text-sm font-medium mt-2 mr-10 sm:ml-18">
-                    <hr className="text-darkgray-80 mb-2"/>
-                    {description}
+                <div className="text-xs sm:text-sm mt-3 sm:mt-4 mr-10 sm:ml-18">
+                    <hr className="text-darkgray-80 mb-3"/>
                     <ul className="list-disc ml-6">
                         {details.map((detail) => (
                             <li key={detail}>

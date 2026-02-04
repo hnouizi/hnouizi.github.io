@@ -1,24 +1,25 @@
 import ExperienceDropdown from "./ExperienceDropdown";
 import Heading from "./Heading";
+import experiences from "../data/experiences.json";
 
 const Experience = () => {
+    
     return (
         <div>
             <Heading>
                 Experience
             </Heading>
-            <ExperienceDropdown
-                position="Software Engineer"
-                organization="Ware Malcomb"
-                duration="Feb 2026 - Present"
-                description="
-                Ware Malcomb is a commercial real estate design firm that specializes
-                in many fields including architecture, interiors, and civil engineering.
-                "
-                details={[
-                    "..."
-                ]}
-            />
+            <div className="flex flex-col gap-2 mb-100">
+                {experiences.map((exp) => (
+                    <ExperienceDropdown
+                        position={exp.position}
+                        organization={exp.organization}
+                        duration={exp.duration}
+                        details={exp.details}
+                        key={exp.details[0]}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

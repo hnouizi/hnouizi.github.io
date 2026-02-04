@@ -1,0 +1,32 @@
+[
+    {
+        "position": "Dx Intern",
+        "organization": "Ware Malcomb",
+        "duration": "June - Nov 2025",
+        "details": [
+            "Designed & implemented a full-stack web application that details Ware Malcomb's projects and displays their geographical location on a map using Mapbox's API",
+            "Completed Jira tickets and reviewed pull requests for various software engineering projects as needed by the digital transformation team"
+        ]
+    },
+    {
+        "position": "Secretary",
+        "organization": "IVC Girls Who Code",
+        "duration": "July 2022 - Apr 2023",
+        "details": [
+            "Ran GWC meetings and events to provide support and resources to female and non-binary STEM students",
+            "Wrote detailed meeting notes during every board and general meeting for future reference"
+        ]
+    },
+    {
+        
+        "position": "Secretary",
+        "organization": "IVC Circle K International",
+        "duration": "Mar 2022 - Mar 2023",
+        "details": [
+            "Ran CKI meetings to promote volunteering events to aid our local community",
+            "Wrote detailed meeting notes during every board and general meeting for future reference",
+            "Completed monthly reports using Excel tracking club membership, volunteering events, members' service hours, and club finances"
+        ]
+    
+    }
+]
