@@ -9,7 +9,7 @@ const Experience = () => {
             <Heading>
                 Experience
             </Heading>
-            <div className="flex flex-col gap-2 mb-100">
+            <div className="flex flex-col gap-2">
                 {experiences.map((exp) => (
                     <ExperienceDropdown
                         position={exp.position}
