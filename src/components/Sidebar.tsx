@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 
 const Sidebar = () => {
     const tabs = ["Home", "Education", "Experience", "Projects"];
     const [ isExpanded, setIsExpanded ] = useState<boolean>(false);
+
+    useEffect(() => {
+        if (isExpanded) {
+            document.body.classList.add("overflow-y-hidden");
+        }
+        else {
+            document.body.classList.remove("overflow-y-hidden");
+        }
+    }, [isExpanded])
 
     return (
         <>
