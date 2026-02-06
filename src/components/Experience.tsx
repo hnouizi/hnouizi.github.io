@@ -1,6 +1,6 @@
 import ExperienceDropdown from "./ExperienceDropdown";
 import Heading from "./Heading";
-import experiences from "../data/experiences.json";
+import { experiences } from "../data/experiences.tsx";
 
 const Experience = () => {
     
@@ -16,7 +16,7 @@ const Experience = () => {
                         organization={exp.organization}
                         duration={exp.duration}
                         details={exp.details}
-                        key={exp.details[0]}
+                        key={exp.position + exp.organization}
                     />
                 ))}
             </div>

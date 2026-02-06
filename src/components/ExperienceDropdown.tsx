@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { FaBriefcase, FaChevronDown } from "react-icons/fa";
 
 type ExperienceDropdownProps = {
     position: string,
     organization: string,
     duration: string,
-    details: string[]
+    details: ReactNode[]
 }
 
 const ExperienceDropdown = ({
@@ -46,9 +46,9 @@ const ExperienceDropdown = ({
             {isExpanded && (
                 <div className="text-xs sm:text-sm mt-3 sm:mt-4 mr-10 sm:ml-18">
                     <hr className="text-darkgray-80 mb-3"/>
-                    <ul className="list-disc ml-6">
-                        {details.map((detail) => (
-                            <li key={detail}>
+                    <ul className="list-disc ml-6 flex flex-col gap-1">
+                        {details.map((detail, i) => (
+                            <li key={i}>
                                 {detail}
                             </li>
                         ))}
