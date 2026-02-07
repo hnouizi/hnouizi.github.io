@@ -5,7 +5,7 @@ import { experiences } from "../data/experiences.tsx";
 const Experience = () => {
     
     return (
-        <div>
+        <div className="mt-30">
             <Heading>
                 Experience
             </Heading>
