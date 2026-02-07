@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
-//import Education from "./components/Education";
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import { useMediaQuery } from "react-responsive";
 
@@ -17,6 +17,7 @@ const App = () => {
 			}
 			<div className="max-sm:w-full max-sm:px-6 sm:w-156">
 				<Home/>
+				<Education/>
 				<Experience/>
 			</div>
 		</div>

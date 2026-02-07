@@ -1,42 +1,25 @@
-import { GiDiploma } from "react-icons/gi";
-import { useMediaQuery } from "react-responsive";
+import { FaGraduationCap } from "react-icons/fa6";
 
-type EducationSection = {
-    degree: string,
-    school: string,
-    gradDate: string
-    direction: string
-}
-
-const EducationSection = ({ degree, school, gradDate, direction }: EducationSection) => {
-    const isSmallScreen = useMediaQuery({query: '(max-width: 455px)'});
-    const isExtraSmallScreen = useMediaQuery({query: '(max-width: 390px)'});
-    const isExtraExtraSmallScreen = useMediaQuery({query: '(max-width: 370px)'});
-
+const EducationSection = () => {
     return (
-        <div className={`${direction === "left" && "flex justify-center items-center"}`}>
-            {direction === "left" && (
-                <div className="h-full flex items-center">
-                    <div className={`left-triangle border-white/5`}/>
+        <div className="w-full flex items-center gap-6 p-4 sm:p-5 rounded border-1 border-darkgray-80 bg-white/5 hover:bg-white/6 cursor-pointer hover:scale-102 transition-all duration-75">
+            <div className="h-fit p-2 bg-cobaltblue border-4 rounded-full">
+                <FaGraduationCap className="text-xl sm:text-2xl"/>
+            </div>
+            <div>
+                <div className="text-xl font-bold">
+                    Computer Science, B.S.
                 </div>
-            )}
-            <div className="bg-white/5 px-8 py-5 rounded-lg">
-                <div className={`${isExtraExtraSmallScreen ? "text-sm" : isExtraSmallScreen ? "text-base" : isSmallScreen ? "text-lg" : "text-2xl"} font-semibold`}>
-                    {degree}
-                </div>
-                <div className={`${isExtraSmallScreen ? "text-xs mb-1" : isSmallScreen ? "text-sm mb-1" : "text-lg mb-2"} font-medium text-darkgray-35 italic`}>
-                    {school}
-                </div>
-                <div className={`${isExtraSmallScreen ? "text-xs" : isSmallScreen ? "text-sm" : "text-base"} flex items-center text-darkgray-50 font-medium gap-2`}>
-                    <GiDiploma className={`${isExtraSmallScreen ? "text-lg" : isSmallScreen ? "text-xl" : "text-2xl"}`}/>
-                    {gradDate}
+                <div className="flex items-center text-xs sm:text-sm gap-2 text-darkgray-50 font-medium">
+                    <div>
+                        UC Irvine
+                    </div>
+                    <div className="h-[0.4rem] w-[0.4rem] sm:h-2 sm:w-2 rounded-full bg-lightorange"/>
+                    <div>
+                        May 2023
+                    </div>
                 </div>
             </div>
-            {direction === "down" && (
-                <div className="w-full flex justify-center items-center">
-                    <div className={`triangle-down border-white/5`}/>
-                </div>
-            )}
         </div>
     )
 }
