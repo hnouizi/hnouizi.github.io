@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
-import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
-import { FaAws, FaJava } from "react-icons/fa6";
+import { FaCss3Alt, FaGitAlt, FaHtml5 } from "react-icons/fa";
+import { FaAngular, FaAws, FaGitlab, FaJava } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiApachetomcat } from "react-icons/si";
+import { SiApachetomcat, SiCplusplus, SiGithub, SiSqlite } from "react-icons/si";
 
 type SkillTagProps = {
     skill: string
@@ -38,6 +38,30 @@ const SkillTag = ({skill}: SkillTagProps) => {
         "aws": {
             icon: <FaAws/>,
             styles: "text-[#FF9900] bg-[#FF9900]/10"
+        },
+        "angular": {
+            icon: <FaAngular/>,
+            styles: "text-[#E90765] bg-[#E90765]/10"
+        },
+        "c++": {
+            icon: <SiCplusplus/>,
+            styles: "text-[#659AD2] bg-[#659AD2]/10"
+        },
+        "sqlite3": {
+            icon: <SiSqlite/>,
+            styles: "text-[#65B8E6] bg-[#65B8E6]/10"
+        },
+        "github": {
+            icon: <SiGithub/>,
+            styles: "text-[#F9F9F9] bg-[#F9F9F9]/10"
+        },
+        "gitlab": {
+            icon: <FaGitlab/>,
+            styles: "text-[#FCA326] bg-[#FCA326]/10"
+        },
+        "git": {
+            icon: <FaGitAlt/>,
+            styles: "text-[#F34F29] bg-[#F34F29]/10"
         }
     }
 
