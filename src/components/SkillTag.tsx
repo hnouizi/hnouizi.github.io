@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { FaCss3Alt, FaGitAlt, FaHtml5 } from "react-icons/fa";
-import { FaAngular, FaAws, FaGitlab, FaJava } from "react-icons/fa6";
+import { FaAngular, FaAws, FaGitlab, FaJava, FaPython } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiApachetomcat, SiCplusplus, SiGithub, SiSqlite } from "react-icons/si";
@@ -38,6 +38,10 @@ const SkillTag = ({skill}: SkillTagProps) => {
         "aws": {
             icon: <FaAws/>,
             styles: "text-[#FF9900] bg-[#FF9900]/10"
+        },
+        "python": {
+            icon: <FaPython/>,
+            styles: "text-[#FFDC50] bg-[#FFDC50]/10"
         },
         "angular": {
             icon: <FaAngular/>,
