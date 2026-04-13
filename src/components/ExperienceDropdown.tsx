@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from "react";
 import { FaBriefcase, FaChevronDown } from "react-icons/fa";
+import { FaUserGroup } from "react-icons/fa6";
 
 type ExperienceDropdownProps = {
     position: string,
@@ -24,7 +25,11 @@ const ExperienceDropdown = ({
             <div className="w-full flex justify-between items-center">
                 <div className="flex items-center gap-6">
                     <div className="max-sm:hidden p-2 bg-cobaltblue border-4 rounded-full">
-                        <FaBriefcase className="text-xl sm:text-2xl"/>
+                        {position === "Secretary"
+                            ? <FaUserGroup className="text-xl sm:text-2xl"/>
+                            : <FaBriefcase className="text-xl sm:text-2xl"/>
+                        }
+                        
                     </div>
                     <div>
                         <div className="text-xl font-bold">

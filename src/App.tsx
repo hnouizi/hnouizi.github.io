@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 import { useMediaQuery } from "react-responsive";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
 				<Home/>
 				<Education/>
 				<Experience/>
+				<Projects/>
 			</div>
 		</div>
 	)
