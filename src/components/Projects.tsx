@@ -13,7 +13,6 @@ const Projects = () => {
                     <ProjectSection
                         key={project.title}
                         title={project.title}
-                        duration={project.duration}
                         description={project.description}
                         skills={project.skills}
                     />

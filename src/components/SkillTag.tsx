@@ -77,7 +77,7 @@ const SkillTag = ({skill}: SkillTagProps) => {
     }
 
     return (
-        <div className={`flex gap-1 items-center ${SKILL_MAP[skillKey].styles} px-2 py-1 rounded-full text-xs`}>
+        <div className={`flex gap-[0.3rem] items-center ${SKILL_MAP[skillKey].styles} px-2 py-[0.35rem] rounded-full text-xs/3`}>
             {SKILL_MAP[skillKey].icon}
             {skill}
         </div>
