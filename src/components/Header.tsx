@@ -25,13 +25,22 @@ const Header = () => {
                 </div>
                 <div className="text-darkgray-80"> | </div>
                 {/* gh & in buttons */}
-                <div className="flex gap-3 pl-4">
-                    <button className="flex items-center">
+                <div
+                    className="flex gap-3 pl-4">
+                    <a
+                        className="flex items-center cursor-pointer"
+                        href="https://github.com/hnouizi"
+                        target="_blank"
+                    >
                         <FaGithub className="text-2xl hover:text-neutral-300 active:text-neutral-400 transition-colors duration-150"/>
-                    </button>
-                    <button className="flex items-center">
+                    </a>
+                    <a
+                        className="flex items-center cursor-pointer"
+                        href="https://www.linkedin.com/in/hanna-nouizi/"
+                        target="_blank"
+                    >
                         <FaLinkedin className="text-2xl hover:text-neutral-300 active:text-neutral-400 transition-colors duration-150"/>
-                    </button>
+                    </a>
                 </div>
             </div>
         </header>
