@@ -4,7 +4,7 @@ const Header = () => {
     const tabs = ["Home", "Education", "Experience", "Projects"];
 
     return (
-        <div className="absolute w-full flex justify-center mt-5 z-99">
+        <header className="absolute w-full flex justify-center mt-5 z-99">
             <div className="flex items-center fixed pl-2 pr-4 py-2 rounded-full bg-darkgray-95/90 backdrop-blur-sm border-1 border-darkgray-80 font-semibold text-lg">
                 {/* nav buttons */}
                 <div className="flex gap-1 pr-2">
@@ -12,6 +12,12 @@ const Header = () => {
                         <button
                             key={tab}
                             className="px-3 py-1 rounded-full hover:bg-white/5 active:bg-white/7 transition-colors duration-150"
+                            onClick={() => {
+                                const element = document.getElementById(tab.toLowerCase());
+                                element?.scrollIntoView({
+                                    behavior: "smooth"
+                                });
+                            }}
                         >
                             {tab}
                         </button>
@@ -28,7 +34,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 

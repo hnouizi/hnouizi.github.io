@@ -1,6 +1,9 @@
 const Home = () => {
     return (
-        <div className="h-screen w-full flex justify-center items-center">
+        <div
+            id="home"
+            className="h-screen w-full flex justify-center items-center"
+        >
             <div className="flex justify-center items-center max-sm:flex-col max-sm:gap-10 sm:gap-15">
                 <div className="max-sm:w-2/3 max-sm:max-w-120 sm:w-80"> 
                     <img className="rounded-full" src="headshot.png"/>
