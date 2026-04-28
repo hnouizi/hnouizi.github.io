@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 const Home = () => {
     return (
         <div
@@ -14,6 +16,26 @@ const Home = () => {
                     </div>
                     <div className="text-2xl font-semibold text-cobaltblue">
                         Software Engineer
+                    </div>
+                    <div
+                        className="sm:hidden w-full flex justify-center items-center gap-2 text-gray-300 mt-1 text-[0.9rem]">
+                        <a
+                            className="flex items-center gap-2 cursor-pointer hover:text-gray-400 active:text-gray-500 transition-colors duration-150"
+                            href="https://github.com/hnouizi"
+                            target="_blank"
+                        >
+                            <FaGithub/>
+                            GitHub
+                        </a>
+                        <span className="text-2xl text-lightorange"> &#8226; </span>
+                        <a
+                            className="flex items-center gap-2 cursor-pointer hover:text-gray-400 active:text-gray-500 transition-colors duration-150"
+                            href="https://www.linkedin.com/in/hanna-nouizi/"
+                            target="_blank"
+                        >
+                            <FaLinkedin/>
+                            LinkedIn
+                        </a>
                     </div>
                 </div>
             </div>

@@ -5,9 +5,9 @@ const Header = () => {
 
     return (
         <header className="absolute w-full flex justify-center mt-5 z-99">
-            <div className="flex items-center fixed pl-2 pr-4 py-2 rounded-full bg-darkgray-95/90 backdrop-blur-sm border-1 border-darkgray-80 font-semibold text-lg">
+            <div className="flex items-center fixed pl-2 pr-4 py-2 rounded-full bg-darkgray-95/90 backdrop-blur-sm border-1 border-darkgray-80 font-semibold sm:text-lg">
                 {/* nav buttons */}
-                <div className="flex gap-1 pr-2">
+                <div className="flex sm:pr-2">
                     {tabs.map((tab) => (
                         <button
                             key={tab}
@@ -23,23 +23,23 @@ const Header = () => {
                         </button>
                     ))}
                 </div>
-                <div className="text-darkgray-80"> | </div>
+                <div className="not-sm:hidden text-darkgray-80"> | </div>
                 {/* gh & in buttons */}
                 <div
-                    className="flex gap-3 pl-4">
+                    className="not-sm:hidden flex gap-3 pl-4">
                     <a
                         className="flex items-center cursor-pointer"
                         href="https://github.com/hnouizi"
                         target="_blank"
                     >
-                        <FaGithub className="text-2xl hover:text-neutral-300 active:text-neutral-400 transition-colors duration-150"/>
+                        <FaGithub className="text-lg sm:text-2xl hover:text-neutral-300 active:text-neutral-400 transition-colors duration-150"/>
                     </a>
                     <a
                         className="flex items-center cursor-pointer"
                         href="https://www.linkedin.com/in/hanna-nouizi/"
                         target="_blank"
                     >
-                        <FaLinkedin className="text-2xl hover:text-neutral-300 active:text-neutral-400 transition-colors duration-150"/>
+                        <FaLinkedin className="text-lg sm:text-2xl hover:text-neutral-300 active:text-neutral-400 transition-colors duration-150"/>
                     </a>
                 </div>
             </div>

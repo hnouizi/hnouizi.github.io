@@ -7,7 +7,7 @@ const Experience = () => {
     return (
         <div
             id="experience"
-            className="pt-20"
+            className="pt-15 sm:pt-20"
         >
             <Heading>
                 Experience

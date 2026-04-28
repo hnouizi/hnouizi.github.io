@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <div
             id="projects"
-            className="pt-20"
+            className="pt-15 sm:pt-20"
         >
             <Heading>
                 Projects
