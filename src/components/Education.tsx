@@ -4,7 +4,10 @@ import Heading from "./Heading";
 const Education = () => {
     
     return (
-        <div>
+        <div
+            id="education"
+            className="pt-15 sm:pt-20"
+        >
             <Heading>
                 Education
             </Heading>

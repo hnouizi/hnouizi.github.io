@@ -4,7 +4,10 @@ import { projects } from "../data/projects";
 
 const Projects = () => {
     return (
-        <div className="mt-30">
+        <div
+            id="projects"
+            className="pt-15 sm:pt-20"
+        >
             <Heading>
                 Projects
             </Heading>
