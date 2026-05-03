@@ -11,7 +11,7 @@
 }
 
 body {
-    @apply bg-darkgray-100 text-neutral-100;
+    @apply bg-darkgray-100 text-neutral-100 select-none;
     font-family: Roboto, Arial;
 }
 
