@@ -8,7 +8,7 @@ type EducationSectionProps = {
 
 const EducationSection = ({ degree, school, gradDate }: EducationSectionProps) => {
     return (
-        <div className="w-full flex items-center gap-4 p-4 sm:p-5 rounded border-1 border-darkgray-80 bg-white/5 hover:bg-white/6 cursor-pointer hover:scale-102 transition-all duration-75">
+        <div className="w-full flex items-center gap-4 p-4 sm:p-5 rounded border-1 border-darkgray-80 bg-white/5 hover:bg-white/7">
             <div className="h-fit p-2 bg-cobaltblue border-4 rounded-full">
                 <FaGraduationCap className="text-2xl"/>
             </div>
