@@ -28,5 +28,5 @@ button {
 }
 
 .detail-highlight {
-    @apply bg-[#465373] px-1 py-[0.1rem] rounded-sm
+    @apply text-[#828daa] font-bold
 }
