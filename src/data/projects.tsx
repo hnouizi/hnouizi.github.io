@@ -8,7 +8,7 @@ export const projects = [
     {
         title: "Search Engine",
         duration: "Feb - Mar 2025",
-        description: "A command-line program that takes search queries and returns the most relevant documents from tens of thousands of documents and webpages in under 300ms",
+        description: "A command-line program that takes search queries and returns the most relevant results from a corpus of tens of thousands of documents and webpages in under 300ms",
         skills: ["Python", "GitHub"]
     },
     {
@@ -54,15 +54,9 @@ export const projects = [
         skills: ["C++", "GitLab"]
     },
     {
-        title: "Fill-in-the-Blank",
-        duration: "Nov - Dec 2023",
-        description: "A Mad Libs-like program that allows the user to create a fill-in-the-blank statement and possible words with different probabilities and returns the completed statement",
-        skills: ["Python", "Git"]
-    },
-    {
         title: "Airport Database Manager",
         duration: "Nov - Dec 2023",
         description: "A program that allows the user to look up, add, and update information about a certain continent, country, or region in a mock airport database",
-        skills: ["Python", "SQLite3"]
+        skills: ["Python", "SQLite3", "Git"]
     }
 ]
